@@ -19,11 +19,15 @@
 
 import PackageDescription
 
+let webEngageVersion = "beta-01"
+let weLocationVersion = "beta-01"
+let weNotificationInboxVersion = "beta-01"
+let wePersonalizationVersion = "beta-01"
+
 let package = Package(
     name: "webengage-ios-sdk",
     platforms: [.iOS(.v13)],
     products: [
-        .library(name: "WebEngage", targets: ["WebEngage","WELocation"]),
         .library(name: "WebEngageCore", targets: ["WebEngage"]),
         .library(name: "WebEngageLocation", targets: ["WELocationWrapper"]),
         .library(name: "WebEngagePersonalization", targets: ["WEPersonalizationWrapper"]),
@@ -33,22 +37,22 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "WebEngage",
-            url: "https://webengage-sdk.s3.us-west-2.amazonaws.com/ios/spm/beta-01/WebEngage.xcframework.zip",
+            url: "https://webengage-sdk.s3.us-west-2.amazonaws.com/ios/spm/\(webEngageVersion)/WebEngage.xcframework.zip",
             checksum: "b94c92e9d3b47b4c2f1bb93b24e25809fcd8a3d80e54006c2c4dce0b7a7339f5"
         ),
         .binaryTarget(
             name: "WELocation",
-            url: "https://webengage-sdk.s3.us-west-2.amazonaws.com/ios/spm/beta-01/WELocation.xcframework.zip",
+            url: "https://webengage-sdk.s3.us-west-2.amazonaws.com/ios/spm/\(weLocationVersion)/WELocation.xcframework.zip",
             checksum: "5314d41eb0ecfa553c94b1d42d9ed26cd84ca1114c20613e57edbe96a7589f68"
         ),
         .binaryTarget(
             name: "WENotificationInbox",
-            url: "https://webengage-sdk.s3.us-west-2.amazonaws.com/ios/spm/beta-01/WENotificationInbox.xcframework.zip",
+            url: "https://webengage-sdk.s3.us-west-2.amazonaws.com/ios/spm/\(weNotificationInboxVersion)/WENotificationInbox.xcframework.zip",
             checksum: "d9928f2960ddb7422e509dfd3e33b0235bec3fa7537486878aef1b2ffc567b83"
         ),
         .binaryTarget(
             name: "WEPersonalization",
-            url: "https://webengage-sdk.s3.us-west-2.amazonaws.com/ios/spm/beta-01/WEPersonalization.xcframework.zip",
+            url: "https://webengage-sdk.s3.us-west-2.amazonaws.com/ios/spm/\(wePersonalizationVersion)/WEPersonalization.xcframework.zip",
             checksum: "1bf628c7b7b2502e6956a817deca84a544ec946841e1ca795b4072ced14b2216"
         ),
         .target(
