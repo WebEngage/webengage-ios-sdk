@@ -20,7 +20,7 @@
 import PackageDescription
 
 let webEngageVersion = "beta-01"
-let webEngageChecksum = "b94c92e9d3b47b4c2f1bb93b24e25809fcd8a3d80e54006c2c4dce0b7a7339f5"
+let webEngageChecksum = "b68aa09c04fb1724b67498309445ad291f7be43fb9c14a43233ee2deb44c0aa4"
 
 let weLocationVersion = "beta-01"
 let weLocationChecksum = "5314d41eb0ecfa553c94b1d42d9ed26cd84ca1114c20613e57edbe96a7589f68"
@@ -44,7 +44,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "WebEngage",
-            url: "https://webengage-sdk.s3.us-west-2.amazonaws.com/ios/spm/\(webEngageVersion)/WebEngage.xcframework.zip",
+            url: "https://we-sdk.webengage.com/ios/WebEngageCore/6.20.0/WebEngageFramework.zip",
             checksum: webEngageChecksum
         ),
         .binaryTarget(
