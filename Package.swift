@@ -19,8 +19,8 @@
 
 import PackageDescription
 
-let webEngageVersion = "7.0.3"
-let webEngageChecksum = "3d6b29b8b57228b9b990c32855a1a7756bd7fbc963909e31be787b63479e13ef"
+let webEngageVersion = "7.0.4"
+let webEngageChecksum = "ef31f0dbdec2dc49aa475bb76fad8c358c13a3b2a6ed79c43813b8e01922a543"
 
 let weLocationVersion = "1.0.0"
 let weLocationChecksum = "dedcd7640a880978b6b75676336507ead223f3669c5e6316e22653405c1487ad"
@@ -28,8 +28,8 @@ let weLocationChecksum = "dedcd7640a880978b6b75676336507ead223f3669c5e6316e22653
 let weNotificationInboxVersion = "1.2.0"
 let weNotificationInboxChecksum = "5e3fc4a85883162eb22f1f5abcb94fce1cfe95f1799a536fb4aeefdb5420a266"
 
-let wePersonalizationVersion = "1.6.0"
-let wePersonalizationChecksum = "5e4df96951b9f365c66c7fb46d1d5e23a36d7bb99f39ae7b0bc37f3c17f27dc7"
+let wePersonalizationVersion = "1.6.1"
+let wePersonalizationChecksum = "1a7d94e4b204fcca5433722a19d327a06d3a6b09882d7bb5fb4c75ee1b44da1c"
 
 let package = Package(
     name: "webengage-ios-sdk",
