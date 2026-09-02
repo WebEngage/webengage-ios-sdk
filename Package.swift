@@ -19,11 +19,14 @@
 
 import PackageDescription
 
-let webEngageVersion = "7.0.4"
-let webEngageChecksum = "ef31f0dbdec2dc49aa475bb76fad8c358c13a3b2a6ed79c43813b8e01922a543"
+let webEngageVersion = "7.1.0"
+let webEngageChecksum = "9b4bbc75e12fba962710363b3a45abe17e2a6493a2302ea5c2a336579885544d"
 
 let weLocationVersion = "1.0.0"
 let weLocationChecksum = "dedcd7640a880978b6b75676336507ead223f3669c5e6316e22653405c1487ad"
+
+let weInspectorVersion = "1.0.0"
+let weInspectorChecksum = "820017bf717a90342f2a9125f798088a31917c2aa4dce72b006ee8131b610764"
 
 let weNotificationInboxVersion = "1.2.0"
 let weNotificationInboxChecksum = "5e3fc4a85883162eb22f1f5abcb94fce1cfe95f1799a536fb4aeefdb5420a266"
@@ -37,6 +40,7 @@ let package = Package(
     products: [
         .library(name: "WebEngageCore", targets: ["WebEngage"]),
         .library(name: "WebEngageLocation", targets: ["WELocationWrapper"]),
+        .library(name: "WebEngageInspector", targets: ["WEInspectorWrapper"]),
         .library(name: "WebEngagePersonalization", targets: ["WEPersonalizationWrapper"]),
         .library(name: "WebEngageNotificationInbox", targets: ["WENotificationInboxWrapper"])
    
@@ -53,6 +57,11 @@ let package = Package(
             checksum: weLocationChecksum
         ),
         .binaryTarget(
+            name: "WEInspector",
+            url: "https://we-sdk.webengage.com/ios/WebEngageInspector/\(weInspectorVersion)/WEInspector.zip",
+            checksum: weInspectorChecksum
+        ),
+        .binaryTarget(
             name: "WENotificationInbox",
             url: "https://we-sdk.webengage.com/ios/WENotificationInbox/\(weNotificationInboxVersion)/WENotificationInbox.zip",
             checksum: weNotificationInboxChecksum
@@ -66,6 +75,11 @@ let package = Package(
             name: "WELocationWrapper",
             dependencies: ["WebEngage", "WELocation"],
             path: "Sources/WELocationWrapper"
+        ),
+        .target(
+            name: "WEInspectorWrapper",
+            dependencies: ["WebEngage", "WEInspector"],
+            path: "Sources/WEInspectorWrapper"
         ),
         .target(
             name: "WENotificationInboxWrapper",
