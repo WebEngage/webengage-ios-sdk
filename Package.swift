@@ -23,7 +23,7 @@ let webEngageVersion = "7.1.1"
 let webEngageChecksum = "cd4e82aebcc74070726ee71c7cf49b9acd19c3830255bbd8aeb27b3b9eea002c"
 
 let weLocationVersion = "1.0.1"
-let weLocationChecksum = "a717321f43cf7251c6eb98ffd5086d4a5d2b3b045f3e84d502b1d67d68027e7d"
+let weLocationChecksum = "56fc5f649b1c75f44dc7dcb8fe3804e32498caee51fc0152f9ac4d88a373553b"
 
 let weInspectorVersion = "1.0.1"
 let weInspectorChecksum = "9529372d572386541b20239e8bf7e6ad5b53551685121674a3be530101e96fe7"
