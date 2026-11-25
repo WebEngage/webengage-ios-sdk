@@ -22,7 +22,7 @@ import PackageDescription
 let webEngageVersion = "7.1.1"
 let webEngageChecksum = "cd4e82aebcc74070726ee71c7cf49b9acd19c3830255bbd8aeb27b3b9eea002c"
 
-let weLocationVersion = "1.0.1"
+let weLocationVersion = "1.0.2"
 let weLocationChecksum = "56fc5f649b1c75f44dc7dcb8fe3804e32498caee51fc0152f9ac4d88a373553b"
 
 let weInspectorVersion = "1.0.1"
@@ -36,7 +36,7 @@ let wePersonalizationChecksum = "1a7d94e4b204fcca5433722a19d327a06d3a6b09882d7bb
 
 let package = Package(
     name: "webengage-ios-sdk",
-    platforms: [.iOS(.v13)],
+    platforms: [.iOS(.v15)],
     products: [
         .library(name: "WebEngageCore", targets: ["WebEngage"]),
         .library(name: "WebEngageLocation", targets: ["WELocationWrapper"]),
