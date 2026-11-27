@@ -19,8 +19,8 @@
 
 import PackageDescription
 
-let webEngageVersion = "7.1.1"
-let webEngageChecksum = "cd4e82aebcc74070726ee71c7cf49b9acd19c3830255bbd8aeb27b3b9eea002c"
+let webEngageVersion = "7.1.2"
+let webEngageChecksum = "64172399d760d9c153051e153b99b4537ceac2456374b7aa6daf972ead53b696"
 
 let weLocationVersion = "1.0.2"
 let weLocationChecksum = "56fc5f649b1c75f44dc7dcb8fe3804e32498caee51fc0152f9ac4d88a373553b"
